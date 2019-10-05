@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  backend:
+    image: willdobbins/readme_be:latest
+    depends_on:
+      - redis
+  redis:
+    image: redis:latest
